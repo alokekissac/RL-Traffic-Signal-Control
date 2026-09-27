@@ -1,0 +1,8 @@
+docs/
+notebooks/
+original/
+tests/
+results/*.npy
+results/train_log.txt
+__pycache__/
+.pytest_cache/

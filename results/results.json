@@ -1,0 +1,200 @@
+{
+  "baselines": {
+    "Random": {
+      "mean": 5.49593,
+      "ci95": 0.02956672812074347,
+      "dropped": 0.56126
+    },
+    "Fixed-time (2-step cycle)": {
+      "mean": 5.70789,
+      "ci95": 0.02897973048038366,
+      "dropped": 0.51012
+    },
+    "Longest queue first": {
+      "mean": 5.06991,
+      "ci95": 0.027534356745749864,
+      "dropped": 0.49141
+    },
+    "Always EW green": {
+      "mean": 3.56378,
+      "ci95": 0.016361703720444206,
+      "dropped": 0.97408
+    },
+    "Optimal (value iteration)": {
+      "mean": 3.56087,
+      "ci95": 0.01685373121520624,
+      "dropped": 0.96069
+    },
+    "Optimal, overflow-aware": {
+      "mean": 3.83329,
+      "ci95": 0.022465933395930716,
+      "dropped": 0.57196
+    }
+  },
+  "experiments": {
+    "baseline": {
+      "hyperparams": {
+        "alpha": 0.1,
+        "gamma": 0.9,
+        "epsilon": 1.0,
+        "epsilon_decay": 0.995,
+        "epsilon_min": 0.01,
+        "episodes": 5000,
+        "overflow_penalty": 0.0
+      },
+      "q_learning": {
+        "mean_waiting": 3.56989,
+        "std_across_seeds": 0.009484131483694236,
+        "best_seed_waiting": 3.56205,
+        "mean_dropped": 0.971724,
+        "policy_agreement_with_optimal": 0.8916666666666666,
+        "final_100_episode_return": -180.858,
+        "per_seed": [
+          3.56205,
+          3.56378,
+          3.5691100000000002,
+          3.58597,
+          3.56854
+        ]
+      },
+      "monte_carlo": {
+        "mean_waiting": 3.698572,
+        "std_across_seeds": 0.1727368697470228,
+        "best_seed_waiting": 3.5683500000000006,
+        "mean_dropped": 0.81274,
+        "policy_agreement_with_optimal": 0.8583333333333332,
+        "final_100_episode_return": -184.82000000000002,
+        "per_seed": [
+          3.57188,
+          3.5772,
+          3.8821399999999997,
+          3.5683500000000006,
+          3.89329
+        ]
+      }
+    },
+    "exp1": {
+      "hyperparams": {
+        "alpha": 0.2,
+        "gamma": 0.3,
+        "epsilon": 1.0,
+        "epsilon_decay": 0.456,
+        "epsilon_min": 0.03,
+        "episodes": 500,
+        "overflow_penalty": 0.0
+      },
+      "q_learning": {
+        "mean_waiting": 4.0614099999999995,
+        "std_across_seeds": 0.4477269136985175,
+        "best_seed_waiting": 3.62714,
+        "mean_dropped": 0.945536,
+        "policy_agreement_with_optimal": 0.65,
+        "final_100_episode_return": -202.698,
+        "per_seed": [
+          3.89456,
+          4.772849999999999,
+          3.62714,
+          4.19753,
+          3.81497
+        ]
+      },
+      "monte_carlo": {
+        "mean_waiting": 3.993058,
+        "std_across_seeds": 0.2421571224845555,
+        "best_seed_waiting": 3.68335,
+        "mean_dropped": 0.96401,
+        "policy_agreement_with_optimal": 0.6916666666666667,
+        "final_100_episode_return": -203.238,
+        "per_seed": [
+          4.22201,
+          4.25554,
+          3.92236,
+          3.88203,
+          3.68335
+        ]
+      }
+    },
+    "exp2": {
+      "hyperparams": {
+        "alpha": 0.3,
+        "gamma": 0.45,
+        "epsilon": 0.5,
+        "epsilon_decay": 0.564,
+        "epsilon_min": 0.02,
+        "episodes": 500,
+        "overflow_penalty": 0.0
+      },
+      "q_learning": {
+        "mean_waiting": 3.8736800000000002,
+        "std_across_seeds": 0.28119977924955786,
+        "best_seed_waiting": 3.61484,
+        "mean_dropped": 0.917178,
+        "policy_agreement_with_optimal": 0.6916666666666667,
+        "final_100_episode_return": -193.124,
+        "per_seed": [
+          3.79876,
+          3.61484,
+          3.75316,
+          4.35179,
+          3.84985
+        ]
+      },
+      "monte_carlo": {
+        "mean_waiting": 4.153292,
+        "std_across_seeds": 0.11840761428219046,
+        "best_seed_waiting": 4.03448,
+        "mean_dropped": 0.9656220000000001,
+        "policy_agreement_with_optimal": 0.6,
+        "final_100_episode_return": -207.974,
+        "per_seed": [
+          4.16119,
+          4.16515,
+          4.067069999999999,
+          4.33857,
+          4.03448
+        ]
+      }
+    },
+    "overflow": {
+      "hyperparams": {
+        "alpha": 0.1,
+        "gamma": 0.9,
+        "epsilon": 1.0,
+        "epsilon_decay": 0.995,
+        "epsilon_min": 0.01,
+        "episodes": 5000,
+        "overflow_penalty": 2.0
+      },
+      "q_learning": {
+        "mean_waiting": 3.87337,
+        "std_across_seeds": 0.04096375165924121,
+        "best_seed_waiting": 3.8374300000000003,
+        "mean_dropped": 0.57674,
+        "policy_agreement_with_optimal": 0.9083333333333334,
+        "final_100_episode_return": -259.82,
+        "per_seed": [
+          3.8374300000000003,
+          3.9186499999999995,
+          3.8486,
+          3.9173999999999998,
+          3.8447699999999996
+        ]
+      },
+      "monte_carlo": {
+        "mean_waiting": 3.960904,
+        "std_across_seeds": 0.2956424345049268,
+        "best_seed_waiting": 3.5994300000000004,
+        "mean_dropped": 0.636836,
+        "policy_agreement_with_optimal": 0.8416666666666668,
+        "final_100_episode_return": -260.45,
+        "per_seed": [
+          4.41601,
+          3.5994300000000004,
+          4.00635,
+          3.8983,
+          3.8844300000000005
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+-r requirements.txt
+gymnasium>=0.29
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8
