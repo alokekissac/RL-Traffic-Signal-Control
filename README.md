@@ -21,7 +21,7 @@ A custom Gymnasium intersection · tabular Q-learning and first-visit Monte Carl
 
 </div>
 
-![3D simulator: the Q-learning agent controlling the intersection](docs/screenshots/simulator.jpg)
+![3D simulator: a night-time city intersection controlled by the Q-learning agent](docs/screenshots/city.jpg)
 
 ---
 
@@ -144,6 +144,8 @@ The overflow-aware policy serves North–South even when it holds 3 cars, accept
 ## 🌃 3D web simulator
 
 ![Landing page](docs/screenshots/landing.jpg)
+
+![Simulator with live metrics and the agent's Q-values](docs/screenshots/simulator.jpg)
 
 - **Live 3D intersection** (Three.js with bloom and shadows): cars queue, drive through on green, and flash red when turned away from a full queue.
 - **Switch controllers on the fly:** Q-learning, Monte Carlo, optimal, overflow-aware optimal, longest queue, fixed-time or random.
