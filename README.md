@@ -6,6 +6,8 @@
 
 A custom Gymnasium intersection · tabular Q-learning and first-visit Monte Carlo control · exact optimal policy by value iteration · a 3D browser simulator with a JSON API
 
+### [🚦 Live demo: rl-traffic-signal-control.vercel.app](https://rl-traffic-signal-control.vercel.app/#simulator)
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falokekissac%2FRL-Traffic-Signal-Control&project-name=rl-traffic-signal-control)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -159,7 +161,7 @@ The browser runs the same environment dynamics as `traffic_rl/env.py`, using the
 
 | Endpoint | Description |
 |---|---|
-| `GET /api/decide?ns=2&ew=4&policy=q_learning` | Greedy action, Q-values and whether it matches the optimal action |
+| [`GET /api/decide?ns=2&ew=4&policy=q_learning`](https://rl-traffic-signal-control.vercel.app/api/decide?ns=2&ew=4&policy=q_learning) | Greedy action, Q-values and whether it matches the optimal action |
 | `POST /api/decide` with body `{"ns": 3, "ew": 1, "policy": "monte_carlo"}` | Same, with a JSON body |
 | `GET /api/policies` | All Q-tables |
 | `GET /api/results` | Evaluation results |
