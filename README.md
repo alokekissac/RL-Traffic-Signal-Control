@@ -39,7 +39,7 @@ Fixed-time traffic lights switch on a timer, whatever the traffic is doing. This
 - **Fair evaluation:** 5 independent training seeds per algorithm, 2,000 held-out episodes, and **common random numbers**, so every controller faces exactly the same traffic.
 - **Web app:** a 3D night-time intersection built with Three.js, where you can switch controllers live, run a benchmark in the browser and query the agents through a JSON API.
 
-This began as our **Reinforcement Learning CA2 group project** at Dublin Business School ("Optimising traffic light decisions to reduce waiting time and congestion"). This repository is a cleaned-up, reproducible version of it: see [What changed from the coursework](#-what-changed-from-the-coursework).
+This began as our **Reinforcement Learning CA2 group project** at Dublin Business School ("Optimising traffic light decisions to reduce waiting time and congestion"). This repository is a cleaned-up, reproducible version of it: see [What changed from the coursework](#-what-changed-from-the-coursework). The original group report is in [`docs/RL_CA2_Report_Traffic_Signal_Control.pdf`](docs/RL_CA2_Report_Traffic_Signal_Control.pdf).
 
 ---
 
@@ -219,7 +219,7 @@ Click **Deploy with Vercel** at the top, or import the repo at [vercel.com/new](
 ├── notebooks/walkthrough.ipynb
 ├── original/                 # The original coursework notebook, unchanged
 ├── tests/                    # pytest suite
-└── docs/                     # figures + screenshots
+└── docs/                     # figures, screenshots, original group report (PDF)
 ```
 
 ---
